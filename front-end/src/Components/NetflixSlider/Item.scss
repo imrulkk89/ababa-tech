@@ -1,0 +1,29 @@
+.item {
+  flex: 0 0 19.7%;
+  transition: transform 300ms ease 100ms;
+  margin: 0 2px;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  &:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.48);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 10px;
+    padding: 69px;
+    text-align: center;
+  }
+}
